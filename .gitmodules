@@ -1,0 +1,27 @@
+[submodule "packages/MP-sort"]
+	path = packages/MP-sort
+	url = git@github.com:zhaoruiyang98/MP-sort.git
+[submodule "packages/pfft-python"]
+	path = packages/pfft-python
+	url = git@github.com:zhaoruiyang98/pfft-python.git
+[submodule "packages/pmesh"]
+	path = packages/pmesh
+	url = git@github.com:zhaoruiyang98/pmesh.git
+[submodule "packages/cosmoprimo"]
+	path = packages/cosmoprimo
+	url = git@github.com:zhaoruiyang98/cosmoprimo.git
+[submodule "packages/pyclass"]
+	path = packages/pyclass
+	url = git@github.com:zhaoruiyang98/pyclass.git
+[submodule "packages/pypower"]
+	path = packages/pypower
+	url = git@github.com:zhaoruiyang98/pypower.git
+[submodule "packages/desilike"]
+	path = packages/desilike
+	url = git@github.com:zhaoruiyang98/desilike.git
+[submodule "packages/pyrecon"]
+	path = packages/pyrecon
+	url = git@github.com:zhaoruiyang98/pyrecon.git
+[submodule "packages/pybird"]
+	path = packages/pybird
+	url = git@github.com:zhaoruiyang98/pybird.git

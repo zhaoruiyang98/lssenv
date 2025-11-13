@@ -1,0 +1,59 @@
+[project]
+name = "lssenv"
+version = "0.1.0"
+description = "lss analysis environment"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy<2.0",
+    "jax",
+    "camb>=1.6.5",
+    "mpsort>=0.1.19",
+    "pfft-python>=0.1.24",
+    "pmesh>=0.1.59",
+    "cosmoprimo>=1.0.0",
+    "pyclass>=1.3.0",
+    "matplotlib>=3.10.7",
+    "pypower>=1.0.0",
+    "sympy>=1.14.0",
+    "numexpr>=2.14.1",
+    "interpax>=0.3.12",
+    "tabulate>=0.9.0",
+    "anesthetic>=2.10.4",
+    "getdist>=1.7.4",
+    "emcee>=3.1.6",
+    "iminuit>=2.32.0",
+    "desilike",
+    "pyrecon>=1.0.0",
+    "pybird-lss>=0.2.0"
+]
+
+[tool.uv]
+override-dependencies = [
+  "pmesh @ file://${PROJECT_ROOT}/packages/pmesh"
+]
+
+[tool.uv.sources]
+mpsort = { path = "packages/MP-sort" }
+pfft-python = { path = "packages/pfft-python" }
+pmesh = { path = "packages/pmesh" }
+cosmoprimo = { workspace = true }
+pyclass = { path = "packages/pyclass" }
+pypower = { path = "packages/pypower" }
+desilike = { workspace = true }
+pyrecon = { path = "packages/pyrecon" }
+pybird-lss = { workspace = true }
+
+[tool.uv.workspace]
+members = ["packages/cosmoprimo", "packages/desilike", "packages/pybird"]
+exclude = []
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::DeprecationWarning:cosmoprimo.*:"]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "ipython>=8.37.0",
+    "pytest>=9.0.1",
+]
