@@ -1,5 +1,5 @@
 # lssenv
-lss analysis environment manged by [uv](https://docs.astral.sh/uv/concepts/projects/workspaces/).
+lss analysis environment managed by [uv](https://docs.astral.sh/uv/concepts/projects/workspaces/).
 
 ## Installation
 Git clone this repo (including all submodules)
@@ -24,3 +24,12 @@ brew install gcc@15
 HOMEBREW_CC=gcc-15 HOMEBREW_CXX=g++-15 brew install open-mpi --build-from-source
 ```
 Note that, open-mpi has to be built from source with environment variable `HOMEBREW_CC` set to `gcc-15` or higher version. This is because by default homebrew installs a pre-compiled open-mpi library built with Apple Clang, but Apple clang cannot build the pfft-python library.
+
+## Keep the environment updated
+There may be more packages added to this repo in the future. To update, please run the following commands
+```bash
+git pull
+git submodule update --depth 1 --init packages/
+```
+
+Note that, submodules under directory `projects` are reserved for personal use, which may or may not be public.
