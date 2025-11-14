@@ -51,7 +51,12 @@ cosmoprimo = { workspace = true }
 eftpipe = { workspace = true }
 
 [tool.uv.workspace]
-members = ["packages/cosmoprimo", "packages/desilike", "packages/pybird", "packages/eftpipe"]
+members = [
+    "packages/cosmoprimo",
+    "packages/desilike",
+    "packages/pybird",
+    "packages/eftpipe",
+]
 exclude = []
 
 [tool.pytest.ini_options]
