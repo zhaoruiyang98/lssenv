@@ -25,3 +25,12 @@
 [submodule "packages/pybird"]
 	path = packages/pybird
 	url = git@github.com:zhaoruiyang98/pybird.git
+[submodule "projects/desi-multi-tracer"]
+	path = projects/desi-multi-tracer
+	url = git@github.com:zhaoruiyang98/desi-multi-tracer.git
+[submodule "packages/eftpipe"]
+	path = packages/eftpipe
+	url = git@github.com:zhaoruiyang98/eftpipe.git
+[submodule "packages/class_public"]
+	path = packages/class_public
+	url = git@github.com:zhaoruiyang98/class_public.git
