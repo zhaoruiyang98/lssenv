@@ -30,6 +30,7 @@ There may be more packages added to this repo in the future. To update, please r
 ```bash
 git pull
 git submodule update --depth 1 --init packages/
+uv sync
 ```
 
-Note that, submodules under directory `projects` are reserved for personal use, which may or may not be public.
+Note that, submodules under directory `projects` are reserved for personal/collaborative use, which may or may not be public repos.

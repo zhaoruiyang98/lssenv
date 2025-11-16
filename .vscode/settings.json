@@ -1,6 +1,7 @@
 {
     "python.analysis.extraPaths": [
         "./packages/cosmoprimo",
-        "./packages/eftpipe"
+        "./packages/eftpipe",
+        "./packages/lsstypes"
     ]
 }

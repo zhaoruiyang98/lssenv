@@ -34,3 +34,6 @@
 [submodule "packages/class_public"]
 	path = packages/class_public
 	url = git@github.com:zhaoruiyang98/class_public.git
+[submodule "packages/lsstypes"]
+	path = packages/lsstypes
+	url = git@github.com:zhaoruiyang98/lsstypes.git
