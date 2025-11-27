@@ -32,11 +32,14 @@ dependencies = [
     "classy>=3.2.2",
     "lsstypes>=1.0.0",
     "h5py>=3.15.1",
+    "coven>=0.1.0",
+    "blackjax>=1.3",
 ]
 
 [tool.uv]
 override-dependencies = [
-  "pmesh @ file://${PROJECT_ROOT}/packages/pmesh"
+  "pmesh @ file://${PROJECT_ROOT}/packages/pmesh",
+  "lsstypes @ file://${PROJECT_ROOT}/packages/lsstypes",
 ]
 
 [tool.uv.sources]
@@ -52,6 +55,7 @@ pybird-lss = { workspace = true }
 cosmoprimo = { workspace = true }
 eftpipe = { workspace = true }
 lsstypes = { workspace = true }
+coven = { workspace = true }
 
 [tool.uv.workspace]
 members = [
@@ -60,6 +64,7 @@ members = [
     "packages/pybird",
     "packages/eftpipe",
     "packages/lsstypes",
+    "packages/coven",
 ]
 exclude = []
 
@@ -72,3 +77,6 @@ dev = [
     "ipython>=8.37.0",
     "pytest>=9.0.1",
 ]
+
+[tool.ruff.lint]
+ignore = ["F541", "E731", "E741"]
