@@ -37,3 +37,6 @@
 [submodule "packages/lsstypes"]
 	path = packages/lsstypes
 	url = git@github.com:zhaoruiyang98/lsstypes.git
+[submodule "packages/coven"]
+	path = packages/coven
+	url = git@github.com:zhaoruiyang98/coven.git
