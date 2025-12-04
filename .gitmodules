@@ -25,9 +25,6 @@
 [submodule "packages/pybird"]
 	path = packages/pybird
 	url = git@github.com:zhaoruiyang98/pybird.git
-[submodule "projects/desi-multi-tracer"]
-	path = projects/desi-multi-tracer
-	url = git@github.com:zhaoruiyang98/desi-multi-tracer.git
 [submodule "packages/eftpipe"]
 	path = packages/eftpipe
 	url = git@github.com:zhaoruiyang98/eftpipe.git
@@ -40,3 +37,6 @@
 [submodule "packages/coven"]
 	path = packages/coven
 	url = git@github.com:zhaoruiyang98/coven.git
+[submodule "projects/desi-y3-multi-tracer"]
+	path = projects/desi-y3-multi-tracer
+	url = git@github.com:zhaoruiyang98/desi-y3-multi-tracer.git
