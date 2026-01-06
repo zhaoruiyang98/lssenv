@@ -40,3 +40,6 @@
 [submodule "projects/desi-y3-multi-tracer"]
 	path = projects/desi-y3-multi-tracer
 	url = git@github.com:zhaoruiyang98/desi-y3-multi-tracer.git
+[submodule "packages/thecov"]
+	path = packages/thecov
+	url = git@github.com:zhaoruiyang98/thecov.git
